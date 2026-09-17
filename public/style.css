@@ -1,0 +1,147 @@
+/* ===== Paleta de cores e variáveis globais ===== */
+:root {
+  --color-primary: #4f46e5;
+  --color-primary-dark: #3730a3;
+  --color-bg: #f5f6fa;
+  --color-surface: #ffffff;
+  --color-text: #1f2333;
+  --color-text-muted: #5c6270;
+  --color-border: #e2e4ec;
+
+  --font-main: 'Poppins', sans-serif;
+
+  --spacing-sm: 0.75rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2.5rem;
+  --spacing-xl: 4rem;
+
+  --radius: 12px;
+}
+
+/* ===== Reset básico ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+ul {
+  list-style: none;
+}
+
+/* ===== Cabeçalho ===== */
+.header {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+  color: #fff;
+  text-align: center;
+  padding: var(--spacing-xl) var(--spacing-md) var(--spacing-lg);
+}
+
+.avatar {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  object-fit: cover;
+  margin-bottom: var(--spacing-sm);
+}
+
+.name {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.title {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+/* ===== Container principal ===== */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: var(--spacing-lg) var(--spacing-md);
+}
+
+/* ===== Seções ===== */
+.section {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+}
+
+.section h2 {
+  font-size: 1.4rem;
+  color: var(--color-primary-dark);
+  margin-bottom: var(--spacing-sm);
+  padding-bottom: var(--spacing-sm);
+  border-bottom: 2px solid var(--color-border);
+}
+
+.section p {
+  color: var(--color-text-muted);
+}
+
+/* ===== Itens de formação ===== */
+.item {
+  margin-bottom: var(--spacing-md);
+}
+
+.item:last-child {
+  margin-bottom: 0;
+}
+
+.item h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+}
+
+.item .period {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--color-primary);
+  font-weight: 500;
+  margin-bottom: 0.4rem;
+}
+
+/* ===== Lista de contato ===== */
+.contact-list li {
+  padding: 0.4rem 0;
+  border-bottom: 1px solid var(--color-border);
+  color: var(--color-text-muted);
+}
+
+.contact-list li:last-child {
+  border-bottom: none;
+}
+
+.contact-list strong {
+  color: var(--color-text);
+  margin-right: 0.4rem;
+}
+
+/* ===== Rodapé ===== */
+.footer {
+  text-align: center;
+  padding: var(--spacing-md);
+  color: var(--color-text-muted);
+  font-size: 0.85rem;
+}
+
+/* ===== Responsividade ===== */
+@media (max-width: 480px) {
+  .name {
+    font-size: 1.6rem;
+  }
+}
